@@ -196,7 +196,7 @@ function clickCard(card){
     /* ❌ WRONG */
 
     // 🔊 softer wrong sound (fixed)
-    playTone(180, 120, 0.14, "sine");
+    playTone(180, 120, 0.16, "sine");
 
     card.classList.add("wrong");
     setTimeout(()=>card.classList.remove("wrong"),300);
@@ -220,8 +220,9 @@ function clickCard(card){
 function nextRound(){
 
   // 🔊 win sound (pleasant chime)
-  playTone(700, 120, 0.15);
-  setTimeout(()=>playTone(900, 120, 0.15),120);
+  playTone(523, 100, 0.1);
+  setTimeout(()=>playTone(659, 100, 0.1), 90);
+  setTimeout(()=>playTone(784, 140, 0.1), 180);
 
   saveGame();
 
