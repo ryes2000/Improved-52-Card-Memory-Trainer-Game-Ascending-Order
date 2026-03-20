@@ -173,7 +173,7 @@ function clickCard(card){
   if(v === sequence[playerIndex]){
 
     // 🔊 correct sound (soft ding)
-    playTone(600, 100, 0.10);
+    playTone(600, 100, 0.08);
 
     card.classList.add("flipped");
 
@@ -220,7 +220,7 @@ function clickCard(card){
 function nextRound(){
 
   // 🔊 win sound (pleasant chime)
-  playTone(523, 100, 0.1);
+  playTone(523, 100, 0.08);
   setTimeout(()=>playTone(659, 100, 0.08), 90);
   setTimeout(()=>playTone(784, 140, 0.08), 180);
 
